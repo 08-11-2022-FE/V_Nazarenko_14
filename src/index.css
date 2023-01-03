@@ -1,0 +1,173 @@
+body {
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header__container {
+  position: fixed;
+  width: inherit;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  z-index: 10;
+}
+
+.c-header__language {
+  font-family: "Tourney";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.c-nav-bar__list > li {
+  display: inline-block;
+
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.c-nav-bar__list > li > span {
+  margin: 0 10px;
+}
+
+.l-header__image {
+  margin-left: auto;
+}
+
+h1:nth-of-type(1)::after {
+  content: "Chapter 1";
+}
+
+h1:nth-of-type(2)::after {
+  content: "Chapter 2";
+}
+
+h1:nth-of-type(3)::after {
+  content: "Chapter 3";
+}
+
+h1:nth-of-type(4)::after {
+  content: "Chapter 4";
+}
+
+h1:nth-of-type(1)::after,
+h1:nth-of-type(2)::after,
+h1:nth-of-type(3)::after,
+h1:nth-of-type(4)::after {
+  font-family: "Farro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.51em;
+  line-height: 0.51em;
+  letter-spacing: 0.04em;
+  color: #000000;
+
+  position: relative;
+  bottom: 23px; /*better to set 49% but browser aren't show it in such way*/
+  left: 10px;
+}
+
+.article-title {
+  font-family: "Francois One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.main__text_underline {
+  text-decoration: underline;
+}
+
+.main__text_italic {
+  font-style: italic;
+}
+
+.main__text_w700 {
+  font-weight: 700;
+}
+
+.main__text_grey-background {
+  background-color: #dadada;
+}
+
+.main__text > i {
+  color: orange;
+}
+
+.divider {
+  position: relative;
+  width: 100px;
+  height: 8px;
+  background: #000000;
+  margin: unset;
+
+  margin-top: 70px;
+}
+
+.divider:first-child {
+  margin: unset;
+}
+
+.l-side-bar__container {
+  margin-top: 185px;
+  position: sticky;
+  top: 85px;
+  width: 385px;
+}
+
+.main__container {
+  width: 785px;
+  position: relative;
+  left: 585px;
+  top: -432px;
+}
+
+.l-side-bar__list > li {
+  margin-bottom: 80px;
+}
+
+.l-side-bar__list > li:last-child {
+  margin: unset;
+}
+
+.l-side-bar__list > .article-title > a,
+.l-side-bar__list > .article-title:hover,
+.l-side-bar__list > .article-title > a:visited {
+  transform: scale(1.1);
+  transform-origin: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main__background-image {
+  position: fixed;
+  top: 135px;
+  right: 0px;
+  z-index: -1;
+}
